@@ -1,0 +1,12 @@
+i=input()
+n=list(map(int,i.split()))
+key=int(input())
+count=-1
+if key in n:#when element is not present
+	for i in n:
+		count+=1#for counting index
+		if key==i:#on matching key print index
+			print(count)
+			break
+else:
+	print("Not found")
