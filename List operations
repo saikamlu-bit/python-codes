@@ -1,0 +1,36 @@
+# write the code..
+def opertion(n,list):#defining function
+	
+	
+	if n==1:
+		s=int(input("Integer: "))
+		#add element to list after checking data type as integer
+		if int==type(s):
+			list.append(s)
+			return print("List after adding:",list)
+	if n==2:#remove element from list if present
+		if len(list)==0:
+			return print("List is empty")
+		else:
+			o=int(input("Integer: "))
+			if o in list:
+				list.remove(o)
+				return print("List after removing:",list)
+			else:
+				print("Element not found")
+	if n==3:#print list after modification
+		if len(list)==0:
+			print("List is empty")
+		else:
+			return print(list)
+	
+List=[]#creating empty list
+p=0
+while(p==0):#display menu 
+	print("1. Add\n2. Remove\n3. Display\n4. Quit")
+	j=int(input("Enter choice: "))#choice taken from menu
+	if j>4:
+		print("Invalid choice")
+	opertion(j,List) #funtion calling for performing operation
+	if j==4:#for extis program
+		break
