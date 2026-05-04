@@ -1,0 +1,12 @@
+import math     
+n= int(input())#accept integer
+if n<=9 :       #square of 1-digit no.
+	print(n*n)
+elif n<=99:      #square root of 2-digit no.
+	s=math.sqrt(n)
+	print(f"{s:.2f}")
+elif n<=999:
+	c=math.cbrt(n)   #cube root of 3-digit no.
+	print(f"{c:.2f}")
+else:
+	print("Invalid")     #digits other than mention 
