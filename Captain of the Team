@@ -1,0 +1,5 @@
+#take height of player
+n=input()
+height=list(map(int,n.split()))
+#tallest player's height
+print(max(height))
