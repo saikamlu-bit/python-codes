@@ -1,0 +1,14 @@
+import numpy as np
+
+# write your code here...
+#take input from user
+row,col=map(int,input().split())
+element=[]
+#take row no. from user
+for i in range(row):
+	element.extend(map(int,input().split()))
+array=np.array(element).reshape(row,col)
+print(array)#numpy array
+print(array.ndim)#number of dimension
+print(array.shape)#shape of array
+print(array.size)#total no. of elements
