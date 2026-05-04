@@ -1,0 +1,4 @@
+s=int(input())#take integer
+n=str(s)#convert into string
+m=n[::-1]#revers of string
+print(m)
