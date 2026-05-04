@@ -1,0 +1,11 @@
+# function for printing table on passing integer and number values  
+def table(n,m):
+	s=n*m
+	return print(f"{n} x {m} = {s}")
+
+#take integer for table
+n=int(input())
+#multiplying from 1 to 10
+for m in range(1,11):
+	s=0
+	table(n,m)
