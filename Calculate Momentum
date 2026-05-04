@@ -1,0 +1,4 @@
+m=float(input())#mass of object
+v=float (input())#velocity of object
+p=m*v            #formula
+print(f"{p:.2f}kgm/s")#momentum of oject
