@@ -1,0 +1,24 @@
+n=0
+no_courses=int(input())#give no.of course
+course=input()          #give marks according to course
+marks_courses=list(map(int,course.split()))
+#check any student have marks less than 40 for passing criteria
+for mark in marks_courses:
+	if mark < 40:
+		print("Fail")
+		n=1
+if n!=1:
+	#formula for calculate aggregate percentage
+	s=(sum(marks_courses))/no_courses
+	print(f"Aggregate Percentage: {s:.2f}")
+	print("Grade:",end=' ')
+	#grading according aggregate percentage 
+	if s>=75:
+		print("Distinction")
+	elif 75>s>=60:
+		print("First Division")
+	elif 60>s>=50:
+		print("Second Division")
+	elif 50>s>=40:
+		print("Third Division")
+
