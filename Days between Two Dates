@@ -1,0 +1,12 @@
+from datetime import date
+n=input()    #take dates form user in string form
+k=input()
+m=list(map(int,n.split("-")))#convert strings into list of integer
+b=list(map(int,k.split("-")))
+date1=date(m[0],m[1],m[2])#using module datetime trace dates
+date2=date(b[0],b[1],b[2])
+days=str(date2-date1)#difference between dates
+#make diference only in no. of day
+day=days.split()
+d=day[0]
+print(d)
