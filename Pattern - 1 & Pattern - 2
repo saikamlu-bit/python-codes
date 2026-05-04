@@ -1,0 +1,27 @@
+#number rows for pattern
+n=int(input())
+c=0
+#print columns of pattern
+for i in range(1,n+1):
+	c+=1
+	for c in range(1,c+1):
+		
+		if c==i :
+			print("* ")
+		else:
+			print("* ",end='')
+
+
+
+
+#rows in number pattern
+n=int(input())
+c=0
+#columns in number pattern
+for i in range(1,n+1):
+	c+=1
+	for c in range(1,c+1):
+		if c==i :
+			print(i,'')
+		else:
+			print(c,'',end='')
